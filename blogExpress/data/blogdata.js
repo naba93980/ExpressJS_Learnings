@@ -1,12 +1,15 @@
 var blogdata = [
     {
-        "lang":"python"
+        "lang": "python",
+        "author":"rossum"
     },
     {
-        "lang":"js"
+        "lang": "js",
+        "author":"brendan eich"
     },
     {
-        "lang":"c++"
+        "lang": "c++",
+        "author":"bjarne stroustrup"
     }
 ]
 module.exports = blogdata;

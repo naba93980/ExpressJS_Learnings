@@ -1,12 +1,18 @@
 const express = require('express');
 const app = express();
-const routerAni = express.Router();
+const routerLang = express.Router();
 const blogdata = require('../../data/blogdata')
 const path = require('path');
+const {routerSlug}=require('./slug/slug')
 
-routerAni.get('/', (req, res) => {
+routerLang.use('/', routerSlug);
+
+
+routerLang.get('/', (req, res) => {
     // res.json(blogdata);
     res.sendFile(path.join(__dirname, '../../templates/animals.html'));
     console.log(req.url);
 })
-module.exports.routerAni = routerAni;
+
+
+module.exports.routerLang = routerLang;
