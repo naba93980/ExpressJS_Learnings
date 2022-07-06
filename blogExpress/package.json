@@ -1,0 +1,16 @@
+{
+  "name": "blogExpress",
+  "version": "1.0.0",
+  "description": "blog created during learning expressJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "nabajyoti",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
