@@ -1,0 +1,20 @@
+{{#if showTitle}}
+    <h1>Home</h1>
+  {{/if}}
+<h1><p>Example App: Home</p></h1>
+<div class="entry">
+{{#if author}}
+<h1>{{firstName}} {{lastName}}</h1>
+{{/if}}
+</div>
+
+
+<ul class="people_list">
+  {{#each people}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+{{#each people}} 
+{{@index}}: {{this}} <br>
+{{/each}}

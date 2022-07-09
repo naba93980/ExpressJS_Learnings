@@ -7,11 +7,13 @@ const {routerSlug}=require('./slug/slug')
 
 routerLang.use('/', routerSlug);
 
-
 routerLang.get('/', (req, res) => {
     // res.json(blogdata);
-    res.sendFile(path.join(__dirname, '../../templates/animals.html'));
-    console.log(req.url);
+    res.render('blogdata', {
+        blogdata
+    })
+    // res.sendFile(path.join(__dirname, '../../templates/animals.html'));
+    // console.log(req.url);
 })
 
 
