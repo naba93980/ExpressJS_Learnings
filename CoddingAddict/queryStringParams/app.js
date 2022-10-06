@@ -24,7 +24,7 @@ app.get('/api/v1/query', (req, res) => {
     
     const { search, limit, price } = req.query;
     
-    let sortedProducts = products; //closure magic 
+    let sortedProducts = [...products]; //closure magic 
 
     if (search) {
         sortedProducts = sortedProducts.filter((ele) => ele.name.startsWith(search)); 
